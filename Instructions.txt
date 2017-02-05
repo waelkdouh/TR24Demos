@@ -29,6 +29,7 @@ Remember to add   "ghostMode": false, under bs-config.json otherwise different b
 
 Electron Setup:
 ---------------
+http://electron.atom.io/
 Remember to use /// to point to local files by setting the <base href="file:///">
 
 Cordova Setup:
