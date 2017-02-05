@@ -45,4 +45,4 @@ Either comment out the CSP or add the following in order to be able to execute i
 
 Add script-src 'self' 'unsafe-inline' 'unsafe-eval'; to allow inline javascript
 
-
+When downloading the code delete the platform and readd the platform to avoid getting an error when rebuilding.
