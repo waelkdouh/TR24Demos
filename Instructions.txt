@@ -1,0 +1,48 @@
+Exiting gateway sdk: https://github.com/Azure/azure-iot-gateway-sdk
+
+NodeJs Setup:
+-------------
+Listening at port 3000 using app.listen(3000)
+
+Remember to add CORS to 
+
+Dont run node index.js and run in debug mode as you will get an exception since both will be listenning to the sampe port. Run one or the other.
+
+Created a nodejs debugging launch.json instead of a chrome specific one to hit the breakpoints.
+
+
+Angular 2 setup:
+----------------
+Make sure to add the correct flag to chrome to allow remote debugging
+
+Make sure to run npm start before you start debugging
+
+Browsersync uses bs-config.json file to setup the server to listen to
+ Local: http://localhost:8000
+[1]     External: http://169.254.80.80:8000
+[1]  --------------------------------------
+[1]           UI: http://localhost:8001
+[1]  UI External: http://169.254.80.80:8001
+
+
+Remember to add   "ghostMode": false, under bs-config.json otherwise different browsers will be triggered at the same time which would cause multiple calls to the backend service.
+
+Electron Setup:
+---------------
+Remember to use /// to point to local files by setting the <base href="file:///">
+
+Cordova Setup:
+---------------
+CLI github repository:  https://github.com/apache/cordova-cli
+---------------------------------------------------------------------
+VERY IMPORTANT to place all the static assets under the WWW folder
+Node_modules folder and app folders should go under the WWW folder
+---------------------------------------------------------------------
+
+Remeber that if you don't rebuild, the assets generated under android/assets will be resused. So either delete the folder explicitly or rebuild.
+
+Either comment out the CSP or add the following in order to be able to execute inline Javascript code:
+
+Add script-src 'self' 'unsafe-inline' 'unsafe-eval'; to allow inline javascript
+
+

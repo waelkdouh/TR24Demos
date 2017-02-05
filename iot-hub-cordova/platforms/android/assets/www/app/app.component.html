@@ -1,0 +1,9 @@
+TR24 IOT Client: {{deviceID}}
+<br/>
+<br/>
+
+<button style="background-color:aqua; color: white" [disabled]="deviceAlreadyRegistered()" (click)="registerDevice()">Register Device</button>
+<button style="background-color:aqua; color:white"  [disabled]="!deviceAlreadyRegistered()" (click)="deRegisterDevice()">DeRegister Device</button>
+
+<button style="background-color:aqua; color:white" *ngIf="deviceAlreadyRegistered()" (click)="sendTelemetry()">Send Telemetry</button>
+
