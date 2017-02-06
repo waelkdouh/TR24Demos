@@ -13,6 +13,13 @@ Created a nodejs debugging launch.json instead of a chrome specific one to hit t
 
 Angular 2 setup:
 ----------------
+start with the quickstart project 
+
+git clone https://github.com/angular/quickstart.git quickstart
+cd quickstart
+npm install
+npm start
+
 Make sure to add the correct flag to chrome to allow remote debugging
 
 Make sure to run npm start before you start debugging
