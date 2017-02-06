@@ -22,18 +22,6 @@ npm start
 
 Make sure to add the correct flag to chrome to allow remote debugging
 
-Make sure to run npm start before you start debugging
-
-Browsersync uses bs-config.json file to setup the server to listen to
- Local: http://localhost:8000
-[1]     External: http://169.254.80.80:8000
-[1]  --------------------------------------
-[1]           UI: http://localhost:8001
-[1]  UI External: http://169.254.80.80:8001
-
-
-Remember to add   "ghostMode": false, under bs-config.json otherwise different browsers will be triggered at the same time which would cause multiple calls to the backend service.
-
 Electron Setup:
 ---------------
 http://electron.atom.io/
