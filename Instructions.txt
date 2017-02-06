@@ -27,6 +27,20 @@ Electron Setup:
 http://electron.atom.io/
 Remember to use /// to point to local files by setting the <base href="file:///">
 
+Exclude JS Files 
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        // include the defaults from VS Code
+        "**/.git": true,
+        "**/.DS_Store": true,
+
+        // exclude .js and .js.map files, when in a TypeScript project
+        "**/*.js": { "when": "$(basename).ts"},
+        "**/*.js.map": true
+    }
+}
+
 Cordova Setup:
 ---------------
 CLI github repository:  https://github.com/apache/cordova-cli
