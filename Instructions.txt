@@ -41,9 +41,13 @@ Exclude JS Files
     }
 }
 
+Desktop Bridge
+https://slack.engineering/introducing-electron-to-the-windows-runtime-4fa789b93d90#.yofagkkew
+
 Cordova Setup:
 ---------------
 CLI github repository:  https://github.com/apache/cordova-cli
+
 ---------------------------------------------------------------------
 VERY IMPORTANT to place all the static assets under the WWW folder
 Node_modules folder and app folders should go under the WWW folder
