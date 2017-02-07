@@ -15,7 +15,7 @@ Angular 2 setup:
 ----------------
 start with the quickstart project 
 
-git clone https://github.com/angular/quickstart.git quickstart
+git clone https://github.com/angular/quickstart.git iot-hub-angular2
 cd quickstart
 npm install
 npm start
