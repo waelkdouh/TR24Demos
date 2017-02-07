@@ -21,7 +21,7 @@ var querystring = require('querystring');
 // String containing Hostname, Device Id & Device Key in the following formats:
 //  "HostName=<iothub_host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"
 // TODO: Add the ability to dynamically register a new device 
-connectionString = 'HostName=tr24iotdemohub.azure-devices.net;DeviceId=SurfacePro3;SharedAccessKey=USM8Y/cBZ0crxCiw/bcps0veV+zFIUpLy+h18D2wfVU=';
+connectionString = 'HostName=tr24iotdemohub.azure-devices.net;DeviceId=Gateway;SharedAccessKey=k9nRaK0FtFfEMZenxtfiuC25B6w/FIJHR5/lqX4E16k=';
 
 // fromConnectionString must specify a transport constructor, coming from any transport package.
 var client = Client.fromConnectionString(connectionString, Protocol);
